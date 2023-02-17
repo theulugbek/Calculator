@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 40px 80px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+} 
+.form {
+    display: flex;
+    margin: 40px auto;
+    background-color: dodgerblue;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.input1 {
+    width: 40%;
+    display: block;
+    font-size: 30px;
+    border: 2px solid blue;
+    outline: none;
+    padding: 10px;
+}
+.input2 {
+    width: 40%;
+    display: block;
+    font-size: 30px;
+    border: 2px solid blue;
+    outline: none;
+    padding: 10px;
+}
+.btn {  
+    width: 20%;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+.natija {
+    width: 800px;
+    margin: 30px auto;
+    background-color: grey;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+}
+.natija1 {
+    width: 800px;
+    margin: 30px auto;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+}
+.natija2 {
+    width: 800px;
+    margin: 30px auto;
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+}
+.natija3 {
+    width: 800px;
+    margin: 30px auto;
+    background-color: purple;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+}
+.boxes {
+    display: flex;
+    margin: 20px auto;
+    min-height: 200px;
+}
+.natija, .natija1, .natija2, .natija3 {
+    margin-right: 10px;
+}
+.natija3:last-child {
+    margin-right: 0;
+}
+@media(max-width:800px){
+    .boxes {
+        flex-wrap: wrap;
+    }
+    .natija, .natija1, .natija2, .natija3 {
+        width: 50%;
+        margin: 0;
+    }
+    .form {
+        flex-wrap: wrap;
+    }
+    .input1, .input2, .btn {
+        width: 100%;
+    }
+    .btn {
+        padding: 15px;
+    }
+}
+@media(max-width:660px){
+    .natija, .natija1, .natija2, .natija3 {
+        width: 100%;
+    }
+}
+@media(max-width:430px){
+    .form {
+        padding: 5px;
+    }
+    body {
+        padding: 10px;
+    }
+}
+.calc {
+    text-align: center;
+    font-size: 25px;
+    background-color: gold;
+    color: blue;
+    padding: 10px;
+    border-radius: 10px;
+}
